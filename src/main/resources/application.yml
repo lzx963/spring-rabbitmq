@@ -1,0 +1,11 @@
+spring:
+  rabbitmq:
+    host: 192.168.88.128
+    port: 5672
+    username: admin
+    password: 123456
+    publisher-confirm-type: correlated   #交换机回调接口
+    publisher-returns: true  #回退接口打开
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
